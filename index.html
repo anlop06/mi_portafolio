@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">&lt;mi portafolio&gt;</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="hero.jpg" alt="">
+            </div>
+            <h1>ANA LÓPEZ</h1>
+            <h2>Junior developer</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Ana López.</span> Soy una adolescente aficionada de cualquier cosa relacionada con la computación y la tecnología. Me encanta aprender nuevas cosas, y aunque me considero rápida para adquirir conocimientos, ponerlos en práctica siempre es todo un reto. Y a pesar de ser toda una novata en el mundo de la programación, siempre estoy dispuesta a llegar más allá.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            22-07-2006
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +502 54545453
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            ana.lopez@licra.edu.gt
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Ciudad de Guatemala
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Mis habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Nivel de educación pre-primaria</h4>
+                        <span class="casa">Colegio el Valle de Occidente</span>
+                        <span class="fecha">2010 - 2011</span>
+                        <p>A pesar de no recordar mucho acerca de esta época de mi vida, de seguro asento las bases para la educación que recibiría en el futuro próximo.</p>
+                    </div>
+                    <div class="item izq">
+                        <h4>Nivel de educacíón primaria</h4>
+                        <span class="casa">Colegio el Valle de Occidente</span>
+                        <span class="fecha">2012 - 2018</span>
+                        <p>Como olvidar la primaria, cuando las tablas de multiplicar empezaban a darme dolores de cabeza y las matemáticas iban más allá que simples sumas y restas. </p>
+                    </div>
+                    <div class="item izq">
+                        <h4>Nivel de educacíón básicos</h4>
+                        <span class="casa">Liceo Cristiano Roca de Ayuda</span>
+                        <span class="fecha">2019 - 2021</span>
+                        <p>Conforme pasaban los años, la dificultad y responsabilidad iban aumentando proporcionalmente. Los tres niveles de eduación básica fueron fundamentales para formar los conocimientos que tengo hasta la actualidad, a pesar de que los últimos dos años los pasé con educación a distancia debido a la pandemia.</p>
+                    </div>
+                    <div class="item izq">
+                        <h4>Nivel de educacíón diversificado en computación</h4>
+                        <span class="casa">Liceo Cristiano Roca de Ayuda</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>El diversificado es donde culmina todo el esfuerzo hecho en los años anteriores. Decidí por la carrera de computación por el hecho que me parecía interesantes las clases de programción y computación, que en mi punto de vista, tendrán una aplicación útil en mi futuro inmediato.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="p1.jpg" alt="">
+                    <div class="overlay">
+                        <a href="https://anlop06.github.io/colorpicker/"><h3>Color Picker</h3></a>
+                        <p>Proyecto #1</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="p2.jpg" alt="">
+                    <div class="overlay">
+                        <a href="https://anlop06.github.io/relojdigital/"><h3>Reloj Digital</h3></a>
+                        <p>Proyecto #2</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="p3.jpg" alt="">
+                    <div class="overlay">
+                        <a href="https://anlop06.github.io/editor_de_codigo/"><h3>Editor de Código</h3></a>
+                        <p>Proyecto #3</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="p4.jpg" alt="">
+                    <div class="overlay">
+                        <a href="https://anlop06.github.io/lista_de_tareas/"><h3>Lista de Tareas</h3></a>
+                        <p>Proyecto #4</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="p5.jpg" alt="">
+                    <div class="overlay">
+                        <a href="https://anlop06.github.io/presupuesto/"><h3>Programa de Presupuesto</h3></a>
+                        <p>Proyecto #5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Guatemala, Ciudad de Guatemala
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Teléfono: 5597 - 2939 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: analauralp2207@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
